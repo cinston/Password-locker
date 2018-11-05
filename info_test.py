@@ -44,3 +44,19 @@ def test_init(self):
         test_info = Info("Carlos_2_w","Instagram", "Carlos", "qwerty98") # new info
         test_info.save_info()
         self.assertEqual(len(Info.info_list),2)
+ def test_delete_info(self):
+        '''
+        test_delete_info to test if we can remove a info from our infos list
+        '''
+        self.new_info.save_info()
+        test_info = Info("Carlos_2_w","Instagram", "Carlos", "qwerty98") # new info
+        test_info.save_info()
+
+        self.new_info.delete_info()# Deleting a info object
+        self.assertEqual(len(Info.info_list),1)
+
+
+
+
+if __name__ == '__main__':
+    unittest.main()        
