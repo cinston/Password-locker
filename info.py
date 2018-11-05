@@ -20,6 +20,13 @@
         '''
 
         Info.info_list.append(self)
+
+     def delete_info(self):
+        '''
+        delete_info method deletes a saved info from the info_list
+        '''
+
+        Info.info_list.remove(self)  
 #  @classmethod
 #     def search_info(cls, user_search, app_search):
 #         '''
