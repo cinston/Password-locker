@@ -19,3 +19,17 @@ class User:
         '''
 
         User.user_list.append(self)
+@classmethod
+    def find_by_userpass(cls, username_search, password_search):
+        '''
+        Method that takes in a username/password and authenticates the user matching.
+        Args:
+            username_search: User name to authenticate.
+            password_search: His password.
+        Returns :
+            Password of person that matches.
+        '''
+
+        for user in cls.user_list:
+            if user.username == username_search and user.password == password_search:
+                return user
