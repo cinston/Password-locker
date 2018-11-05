@@ -48,7 +48,11 @@
  @classmethod
     def display_info(cls, user_search):
         '''
-        method that returns the info list
+        method that returns the credentials list
+        Args:
+            user_search: Automatically takes the name of the logged in user.
+        Returns :
+            List of all credentials of the logged in user.
         '''
         all_user_info =[]
         for info in cls.info_list:
