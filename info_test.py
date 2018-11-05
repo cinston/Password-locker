@@ -35,3 +35,12 @@ def test_init(self):
         '''
         self.new_info.save_info() # saving the new info
         self.assertEqual(len(Info.info_list),1)
+ def test_save_multiple_user(self):
+        '''
+        test_save_multiple_passwords to check if we can save multiple user
+        objects to our info_list
+        '''
+        self.new_info.save_info()
+        test_info = Info("Carlos_2_w","Instagram", "Carlos", "qwerty98") # new info
+        test_info.save_info()
+        self.assertEqual(len(Info.info_list),2)
