@@ -27,20 +27,23 @@
         '''
 
         Info.info_list.remove(self)  
-#  @classmethod
-#     def search_info(cls, user_search, app_search):
-#         '''
-#         Method that takes in an Appname and username and returns a info that matches.
-#         Args:
-#             username: Username to search for
-#             info_app: Appname to search
-#         Returns :
-#             Info that matches Username and Appname.
-#         '''
 
-#         for info in cls.info_list:
-#             if info.username == user_search and info.cred_app == app_search:
-#                 return info      
+
+
+ @classmethod
+    def search_info(cls, user_search, app_search):
+        '''
+        Method that takes in an Appname and username and returns a info that matches.
+        Args:
+            username: Username to search for
+            info_app: Appname to search
+        Returns :
+            Info that matches Username and Appname.
+        '''
+
+        for info in cls.info_list:
+            if info.username == user_search and info.cred_app == app_search:
+                return info      
 
 #  @classmethod
 #     def display_info(cls, user_search):
