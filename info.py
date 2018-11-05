@@ -12,12 +12,14 @@
         self.info_app = info_app
         self.info_user = info_user
         self.info_pass = info_pass
-        def save_cred(self):
+    
+    
+    def save_cred(self):
         '''
         save_info method saves info objects into info_list
         '''
 
-#         Info.cred_list.append(self)
+        Info.info_list.append(self)
 #  @classmethod
 #     def search_info(cls, user_search, app_search):
 #         '''
