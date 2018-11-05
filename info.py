@@ -45,13 +45,13 @@
             if info.username == user_search and info.cred_app == app_search:
                 return info      
 
-#  @classmethod
-#     def display_info(cls, user_search):
-#         '''
-#         method that returns the info list
-#         '''
-#         all_user_info =[]
-#         for info in cls.info_list:
-#             if info.username == user_search:
-#                 all_user_info.append(info)
-#         return all_user_info              
+ @classmethod
+    def display_info(cls, user_search):
+        '''
+        method that returns the info list
+        '''
+        all_user_info =[]
+        for info in cls.info_list:
+            if info.username == user_search:
+                all_user_info.append(info)
+        return all_user_info              
