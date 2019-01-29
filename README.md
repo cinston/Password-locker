@@ -1,23 +1,23 @@
-## Password-locker
+# Password-locker
 
 ## Description
 An application that enables the user to save their passwords for their different online accounts
 ## Setup/Installation Requirements
-https://github.com/cinston/Password-locker
-cd password-locker
-./run.py (to run the application on the terminal)
-## Behavior Driven Development
-# The program should ask for user's username and password when login is entered
+ - https://github.com/cinston/Password-locker
+ - cd password-locker
+ - ./run.py (to run the application on the terminal)
+# Behavior Driven Development
+ The program should ask for user's username and password when login is entered
 
-# The program should create a new user when register is entered
+ The program should create a new user when register is entered
 
-# The program should save existing credentials when save is entered
+ The program should save existing credentials when save is entered
  
-# The program should create new credentials when new is entered
+ The program should create new credentials when new is entered
 
-# The program should display the credentials when display is entered
+ The program should display the credentials when display is entered
 
-# The program should end when exit is entered
+ The program should end when exit is entered
 
 ## License
 Copyright (c) 2018 Winston Carlos
